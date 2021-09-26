@@ -1,0 +1,342 @@
+/* screen width 1366px */
+body{
+    margin: 0px;
+}
+#TitleBarDiv{
+    width: 100%;
+    height: 8%;
+    background-color: red;
+    position: fixed;
+    padding: 1%;
+    z-index: 1;
+}
+#TBTextDiv{
+    width: 15%;
+    border: white 8px solid;
+    border-radius: 49px;
+    margin: auto auto;
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-size: 300%;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+#BackgroundImgDiv{
+    width: auto;
+}
+#BackgroundImg{
+    width: 100%;
+    height: 880px;
+    margin: 0px;
+}
+#WelcomeDiv{
+    width: 35%;
+    height: 261px;
+    background-color: #ffa726;
+    position: absolute;
+    top: 265px;
+    padding: 5px 0px 30px 20px;
+}
+#SubWDiv01{
+    color: white;
+    font-size: 660%;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+#SubWDiv02{
+    color: white;
+    font-size: 900%;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+#NavBarDiv{
+    width: 100%;
+    height: 65px;
+    margin: 0px;
+    background-color: gainsboro;
+    position: sticky;
+    top: 12%;
+    padding: 1% 0% 0% 0%;
+    z-index: 2;
+}
+.NBResponsive{
+    position: absolute;
+    top: 10px;
+    right: 160px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 20px;
+}
+.NBResponsive .bar{
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+#FirstItem{
+    color: red;
+}
+ul{
+    position: relative;
+    top: -13px;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+.SubNBDiv{
+    display: inline-block;
+    margin-left: 13%;
+    color: black;
+    font-size: 33px;
+}
+.SubNBDiv:hover{
+    text-decoration: underline;
+}
+#TextDiv{
+    margin: 5% 20% 5% 13%;
+}
+#TextTitleDiv{
+    color: red;
+    font-size: 400%;
+    font-weight: bolder;
+}
+#TextBodyDiv{
+    font-size: 185%;
+}
+#TextBodyDiv::first-line{
+    font-weight: bold;
+}
+#PicturesDiv{
+    margin: 0% 0% 5% 10%;
+}
+.EachPictureDiv{
+    display: inline;
+    margin-left: 115px;
+}
+.Pictures{
+    width: 32%;
+}
+.Pictures:hover{
+    position: relative;
+    top: -5px;
+}
+#JoinDiv{
+    background-color: gainsboro;
+    padding: 2% 0% 2% 0%;
+}
+#JionTitleDiv{
+    text-align: center;
+    font-size: 300%;
+    font-family: monospace;
+    font-weight: bold;
+}
+#JionTextDiv{
+    text-align: center;
+    margin-top: 1%;
+    font-size: 200%;
+}
+#JionE-mailDiv{
+    text-align: center;
+    margin-top: 1%;
+}
+#E-mail{
+    width: 20%;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    outline: none; 
+    font-size: 150%;
+    text-align: center;
+
+}
+#E-mail:focus{
+    border:dashed 4px black;
+    border-radius: 30px;
+}
+#E-mail:valid{
+    border: solid 2px green;
+}
+#FooterDiv{
+    background-color: red;
+    width: 100%;
+    height: 80px;
+}
+#FooterTextDiv{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    padding: 1%;
+}
+/* screen width 768px (ipad) */
+@media(max-width: 768px){
+    #TitleBarDiv{
+        height: 6%;
+    }
+    #TBTextDiv{
+        width: 25%;
+        border: white 6px solid;
+        font-size: 210%;
+    }
+    #BackgroundImg{
+        height: 450px;
+    }
+    #WelcomeDiv{
+        width: 34%;
+        height: 100px;
+        top: 136px;
+        padding: 15px 0px 30px 20px;
+    }
+    #SubWDiv01{
+        font-size: 240%;
+    }
+    #SubWDiv02{
+        font-size: 330%;
+    }
+    #NavBarDiv{
+        height: 45px;
+        top: 7%;
+        padding: 2% 0% 0% 0%;
+    }
+    .SubNBDiv{
+        margin-left: 6%;
+        font-size: 26px;
+    }
+    #TextDiv{
+        margin: 5% 10% 5% 10%;
+    }
+    #TextTitleDiv{
+        font-size: 340%;
+    }
+    #TextBodyDiv{
+        font-size: 170%;
+    }#PicturesDiv{
+        margin: 0% 7% 5% 0%;
+    }
+    .EachPictureDiv{
+        margin-left: 100px;
+    }
+    #JoinDiv{
+        padding: 2% 0% 2% 0%;
+    }
+    #JionTitleDiv{
+        font-size: 270%;
+    }
+    #JionTextDiv{
+        font-size: 170%;
+    }
+    #E-mail{
+        font-size: 80%;
+        width: 30%;
+    }
+    #FooterDiv{
+        height: 70px;
+    }
+    #FooterTextDiv{
+        font-size: 130%;
+        padding: 2%;
+    }
+}
+/* screen width 360px (Galaxy S5) */
+@media(max-width: 360px){
+    #TitleBarDiv{
+        height: 6%;
+    }
+    #TBTextDiv{
+        width: 36%;
+        border: white 3px solid;
+        font-size: 135%;
+    }
+    #BackgroundImg{
+        height: 255px;
+    }
+    #WelcomeDiv{
+        width: 34%;
+        height: 60px;
+        top: 78px;
+        padding: 14px 0px 6px 7px;
+    }
+    #SubWDiv01{
+        font-size: 110%;
+    }
+    #SubWDiv02{
+        font-size: 146%;
+    }
+    #NavBarDiv{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 35px;
+        top: 7%;
+        padding: 2% 0% 0% 2%;
+    }
+    .SubNBDiv{
+        margin-top: 5%;
+        font-size: 26px;
+        list-style-type: armenian;
+        display: block;
+    }
+    .NBResponsive{
+        display: flex;
+    }
+    .NBLinks{
+        display: none;
+        background-color: gainsboro;
+        height: 190px;
+        width: 230px;
+        position: absolute;
+        left: 65px;
+        top: 40px;
+        border-radius: 0px 0px 30px 30px;
+    }
+    .NBResponsive:focus .NBLinks{
+        display: flex;
+    }
+    ul{
+        flex-direction: column;
+        top: 10px;
+        text-align: inherit;
+    }
+    #TextDiv{
+        margin: 5% 10% 5% 10%;
+    }
+    #TextTitleDiv{
+        font-size: 230%;
+    }
+    #TextBodyDiv{
+        font-size: 150%;
+    }#PicturesDiv{
+        margin: 0% 7% 5% 0%;
+    }
+    .EachPictureDiv{
+        margin-left: 100px;
+    }
+    .Pictures{
+        width: 45%;
+        margin: 4px;
+    }
+    #JoinDiv{
+        padding: 2% 0% 2% 0%;
+    }
+    #JionTitleDiv{
+        font-size: 230%;
+    }
+    #JionTextDiv{
+        font-size: 150%;
+    }
+    #E-mail{
+        font-size: 80%;
+        width: 40%;
+        height: 5%;
+    }
+    #FooterDiv{
+        height: 50px;
+    }
+    #FooterTextDiv{
+        font-size: 100%;
+        padding: 4%;
+    }
+}
