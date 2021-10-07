@@ -1,6 +1,7 @@
 /* screen width 1366px */
 body{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 #TitleBarDiv{
     width: 100%;
